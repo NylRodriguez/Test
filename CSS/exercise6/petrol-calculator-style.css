@@ -1,0 +1,88 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card container */
+.calculator-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Heading */
+.calculator-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+/* Labels */
+.calculator-card label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #555555;
+}
+
+/* Inputs styling */
+.calculator-card input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+/* Input focus effect */
+.calculator-card input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Calculate button */
+#calcButton {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+/* Button hover effect */
+#calcButton:hover {
+  background: #357ab8;
+}
+
+/* Button active (click) effect */
+#calcButton:active {
+  transform: scale(0.98);
+}
+
+/* Result text */
+#result {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+  color: #333333;
+}
