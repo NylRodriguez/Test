@@ -1,0 +1,26 @@
+/* Make body a full‑screen flex container */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;  /* optional: dark background */
+}
+
+/* Wrapper to constrain video dimensions */
+.video-container {
+  max-width: 90vw;   /* up to 90% of viewport width */
+  max-height: 80vh;  /* up to 80% of viewport height */
+  overflow: hidden;
+}
+
+/* Responsive, landscape‑friendly video */
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* letterbox within its box */
+  display: block;
+}
